@@ -10,7 +10,7 @@
     <Window.Resources>
         <Storyboard x:Key="CloseMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="GridMenu">
-                <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="65"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="GridBackground">
@@ -21,7 +21,7 @@
         <Storyboard x:Key="OpenMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="GridMenu">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="65"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="GridBackground">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -42,7 +42,7 @@
         <Button x:Name="ButtonOpen" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Width="30" Height="30" Padding="0">
             <materialDesign:PackIcon Kind="Menu" Foreground="Black"/>
         </Button>
-        <Grid x:Name="GridMenu" Width="180" HorizontalAlignment="Left" Margin="-180 0 0 0" Background="White" RenderTransformOrigin="0.5,0.5">
+        <Grid x:Name="GridMenu" Width="65" HorizontalAlignment="Left" Margin="-65 0 0 0" Background="White" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -52,14 +52,11 @@
                 </TransformGroup>
             </Grid.RenderTransform>
             <StackPanel>
-                <ListView Foreground="#FF313131" FontFamily="Champagne &amp; Limousines" FontSize="18">
-                    <ListViewItem Height="45" Padding="0">
-                        <StackPanel Orientation="Horizontal" Margin="10 0">
-                            <materialDesign:PackIcon Kind="Settings" Width="20" Height="20" Foreground="#FF0069C1" Margin="5" VerticalAlignment="Center"/>
-                            <TextBlock Text="Settings" Margin="10"/>
-                        </StackPanel>
-                    </ListViewItem>
-                </ListView>
+                <Button Padding="0" Margin="10,30,10,0" Height="33" Width="33" Command="{Binding ShowSettings}">
+                    <StackPanel Orientation="Horizontal" Margin="0">
+                        <materialDesign:PackIcon Kind="Settings" Width="20" Height="20" Foreground="White" Margin="0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
             </StackPanel>
             <Button x:Name="ButtonClose" HorizontalAlignment="Right" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Width="30" Height="30" Padding="0">
                 <materialDesign:PackIcon Kind="Close" Foreground="Black"/>
