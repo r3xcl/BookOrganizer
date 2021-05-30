@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BookOrganizer.Views"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="BookOrganizer" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Storyboard x:Key="CloseMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="GridMenu">
@@ -52,7 +52,7 @@
                 </TransformGroup>
             </Grid.RenderTransform>
             <StackPanel>
-                <Button Padding="0" Margin="10,30,10,0" Height="33" Width="33" Command="{Binding ShowSettings}">
+                <Button Padding="0" ToolTip="Настройки" Margin="10,30,10,0" Height="33" Width="33" Command="{Binding ShowSettings}">
                     <StackPanel Orientation="Horizontal" Margin="0">
                         <materialDesign:PackIcon Kind="Settings" Width="20" Height="20" Foreground="White" Margin="0" VerticalAlignment="Center"/>
                     </StackPanel>
@@ -63,7 +63,7 @@
             </Button>
         </Grid>
 
-        <Button Background="{x:Null}"  Width="33" Height="33" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Padding="0">
+        <Button Background="{x:Null}"  Width="33" Height="33" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Padding="0" Command="{Binding AddCourse}">
             <materialDesign:PackIcon Kind="Add" Foreground="Black"/>
         </Button>
 

@@ -18,7 +18,7 @@
             <EventTrigger.Actions>
                 <BeginStoryboard>
                     <Storyboard>
-                        <DoubleAnimation From="0" To="1" Duration="0:0:0.5"
+                        <DoubleAnimation From="0" To="1" Duration="0:0:0.3"
                                           Storyboard.TargetName="ContentLayout"
                                           Storyboard.TargetProperty="Opacity"/>
                     </Storyboard>
@@ -37,7 +37,7 @@
                   Opacity="0.5" Direction="270" 
                   ShadowDepth="0.7" />
                 </Border.BitmapEffect>
-                <Grid Margin="10" Height="250" Width="450">
+                <Grid Margin="8" Height="250" Width="450">
                     <Grid.RowDefinitions>
                         <RowDefinition />
                         <RowDefinition Height="Auto" />
@@ -45,6 +45,8 @@
                     <Button HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="Red" Background="Transparent" Height="25" Width="25" Padding="0" Margin="0" Click="Button_Click">
                         <materialDesign:PackIcon Kind="Close" Padding="0" Foreground="Black" Margin="0"/>
                     </Button>
+
+                    <TextBlock HorizontalAlignment="Center" FontSize="18" Height="25" VerticalAlignment="Top" Foreground="Turquoise">Настройки</TextBlock>
                 </Grid>
             </Border>
         </Border>

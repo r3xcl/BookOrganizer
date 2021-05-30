@@ -259,3 +259,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/BookOrganizer/ViewModels/AddCourseViewModel.cs
+/BookOrganizer/app_icon.ico
+/BookOrganizer/Views/AddCourseView.xaml
+/BookOrganizer/Views/AddCourseView.xaml.cs
