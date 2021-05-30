@@ -76,7 +76,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\MainModel.cs" />
     <Compile Include="ViewModels\AddCourseViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />
@@ -135,6 +134,7 @@
     <Folder Include="Commands\" />
     <Folder Include="Img\" />
     <Folder Include="Infrastructure\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="app_icon.ico" />
