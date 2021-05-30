@@ -25,5 +25,11 @@ namespace BookOrganizer.Views
             InitializeComponent();
             this.DataContext = new MainViewModel();
         }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            Application.Current.Shutdown();
+        }
     }
 }
