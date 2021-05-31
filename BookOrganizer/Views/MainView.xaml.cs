@@ -20,16 +20,21 @@ namespace BookOrganizer.Views
     /// </summary>
     public partial class MainView : Window
     {
-        public MainView()
-        {
-            InitializeComponent();
-            this.DataContext = new MainViewModel();
-        }
+    
+        
+            public MainView()
+            {
+                InitializeComponent();
+                this.DataContext = new MainViewModel();
+            }
 
-        protected override void OnClosed(EventArgs e)
-        {
-            base.OnClosed(e);
-            Application.Current.Shutdown();
-        }
+            protected override void OnClosed(EventArgs e)
+            {
+                base.OnClosed(e);
+                Application.Current.Shutdown();
+            }
+        
+
+
     }
 }

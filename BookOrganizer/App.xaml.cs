@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BookOrganizer.ViewModels;
+using BookOrganizer.Views;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +15,6 @@ namespace BookOrganizer
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

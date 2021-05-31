@@ -4,9 +4,11 @@ using System.Windows.Input;
 using Prism.Commands;
 using System.Windows.Data;
 
+using System;
+
 namespace BookOrganizer.ViewModels
 {
-    class MainViewModel : BindableBase
+ class MainViewModel : BindableBase
     {
       
 

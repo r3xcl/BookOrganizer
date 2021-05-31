@@ -1,0 +1,355 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{86D24E4B-61C6-4930-BC44-91F3ACCB3D7E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Test</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="BookOrganizer\app_icon.ico" />
+    <Content Include="BookOrganizer\bin\Debug\BookOrganizer.exe" />
+    <Content Include="BookOrganizer\bin\Debug\BookOrganizer.pdb" />
+    <Content Include="BookOrganizer\bin\Debug\MaterialDesignColors.dll" />
+    <Content Include="BookOrganizer\bin\Debug\MaterialDesignColors.pdb" />
+    <Content Include="BookOrganizer\bin\Debug\MaterialDesignThemes.Wpf.dll" />
+    <Content Include="BookOrganizer\bin\Debug\MaterialDesignThemes.Wpf.pdb" />
+    <Content Include="BookOrganizer\bin\Debug\MaterialDesignThemes.Wpf.xml" />
+    <Content Include="BookOrganizer\bin\Debug\Prism.dll" />
+    <Content Include="BookOrganizer\bin\Debug\Prism.pdb" />
+    <Content Include="BookOrganizer\bin\Debug\Prism.xml" />
+    <Content Include="BookOrganizer\bin\Debug\System.ValueTuple.dll" />
+    <Content Include="BookOrganizer\bin\Debug\System.ValueTuple.xml" />
+    <Content Include="BookOrganizer\BookOrganizer.csproj" />
+    <Content Include="BookOrganizer\obj\Debug\BookOrganizer.csproj.FileListAbsolute.txt" />
+    <Content Include="BookOrganizer\obj\Debug\BookOrganizer.exe" />
+    <Content Include="BookOrganizer\obj\Debug\BookOrganizer.pdb" />
+    <Content Include="BookOrganizer\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="packages\MaterialDesignColors.2.0.1\images\MaterialDesignColors.Icon.png" />
+    <Content Include="packages\MaterialDesignColors.2.0.1\lib\net452\MaterialDesignColors.dll" />
+    <Content Include="packages\MaterialDesignColors.2.0.1\lib\net452\MaterialDesignColors.pdb" />
+    <Content Include="packages\MaterialDesignColors.2.0.1\lib\netcoreapp3.1\MaterialDesignColors.dll" />
+    <Content Include="packages\MaterialDesignColors.2.0.1\lib\netcoreapp3.1\MaterialDesignColors.pdb" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\images\MaterialDesignThemes.Icon.png" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\lib\net452\MaterialDesignThemes.Wpf.dll" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\lib\net452\MaterialDesignThemes.Wpf.pdb" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\lib\net452\MaterialDesignThemes.Wpf.xml" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\lib\netcoreapp3.1\MaterialDesignThemes.Wpf.dll" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\lib\netcoreapp3.1\MaterialDesignThemes.Wpf.pdb" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\lib\netcoreapp3.1\MaterialDesignThemes.Wpf.xml" />
+    <Content Include="packages\MaterialDesignThemes.4.1.0\tools\VisualStudioToolsManifest.xml" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net461\Prism.dll" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net461\Prism.pdb" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net461\Prism.xml" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net47\Prism.dll" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net47\Prism.pdb" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net47\Prism.xml" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net5.0\Prism.dll" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net5.0\Prism.pdb" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\net5.0\Prism.xml" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\netstandard2.0\Prism.dll" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\netstandard2.0\Prism.pdb" />
+    <Content Include="packages\Prism.Core.8.1.97\lib\netstandard2.0\Prism.xml" />
+    <Content Include="packages\Prism.Core.8.1.97\prism-logo.png" />
+    <Content Include="packages\Prism.Core.8.1.97\readme.txt" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.xml" />
+    <Content Include="packages\System.ValueTuple.4.5.0\LICENSE.TXT" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\net461\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\net47\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\ref\portable-net40+sl4+win8+wp8\System.ValueTuple.dll" />
+    <Content Include="packages\System.ValueTuple.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.ValueTuple.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.ValueTuple.4.5.0\version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\03\3d7a5e9e2266753180f4e3a9299f575046701e" />
+    <None Include=".git\objects\07\d4eec183e4e87a4fc035202cf785cdd622baea" />
+    <None Include=".git\objects\08\41ab4dc086a5e1357c84cb822a94e0dda75dd3" />
+    <None Include=".git\objects\08\b3458e43268169816fd53ea24a2e293f2e8963" />
+    <None Include=".git\objects\10\5eda3230487dcc2497a9df6d706f1471b94680" />
+    <None Include=".git\objects\14\02cc457ee532246528962be5a932af2115e5d6" />
+    <None Include=".git\objects\19\96af15e575b48f90d808037b71acb7082a2fe9" />
+    <None Include=".git\objects\19\9af1f79e65b45a2bbb987aa520e1f19402ca33" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\25\2bee97fdeee698000815673c3a927919b049e2" />
+    <None Include=".git\objects\25\420c8a9c16f5cb6da88d5a80d6906bb88b3990" />
+    <None Include=".git\objects\29\58635e6130b585fc97bfa3dbeeda5a0e5966a0" />
+    <None Include=".git\objects\2c\107faf4577c89b09a35f9e2a24f936d18a8315" />
+    <None Include=".git\objects\2c\634b3cead2404c33167126617b44efc6ee9cd9" />
+    <None Include=".git\objects\2e\579fcb0dbc469e0b90b6adf88c8762a6dd44f6" />
+    <None Include=".git\objects\2f\88d8cf240b43ecd072a5cd6e801799174eb269" />
+    <None Include=".git\objects\34\32910e2f7d85467981c341b1710072a7ed713f" />
+    <None Include=".git\objects\39\932e629c02a869ae4c5cbf4e650211636b7d05" />
+    <None Include=".git\objects\3b\107475dcacbb39f84f4bd37394c217f5c34b00" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\3d\44bf6d5c85acad16d7751d5e7eb62e85e871dd" />
+    <None Include=".git\objects\41\eec087c663a6886103e6690f2470071661abfa" />
+    <None Include=".git\objects\47\35ded857a376e2cb09a626be2a14c0096c6cd4" />
+    <None Include=".git\objects\4f\d7c9d3a98bb156ef5fc598385f8309da2bf49c" />
+    <None Include=".git\objects\55\4c5820e1e7c84bbc130928be2e35d6722c098c" />
+    <None Include=".git\objects\59\adb1405028ae5d4525e88ddb0e62ae8e9b2595" />
+    <None Include=".git\objects\5f\a002ff8afcb01137b570276ebdc0bffd6044f6" />
+    <None Include=".git\objects\6c\61bb10d37fe4e9c468be31062e330719b9e71c" />
+    <None Include=".git\objects\6c\a416119ba35abbba82fcf15e4f99b9f6c0c875" />
+    <None Include=".git\objects\6e\3a2fb9ab50599d1def89fd07bcd9b106e17d5e" />
+    <None Include=".git\objects\70\127a79b0512fc6e35948983f9b2577f80257f5" />
+    <None Include=".git\objects\73\1f6de6c291e303814b02808f34140fe560e8e4" />
+    <None Include=".git\objects\73\65cf9164c2f9f835579692ffe57cea8e8e6dbe" />
+    <None Include=".git\objects\76\550da299ff0969269529476ba1af91a155e688" />
+    <None Include=".git\objects\79\514fbac4257ca218a1bdbef213d21bbeb4b455" />
+    <None Include=".git\objects\80\b99d394980b39b9821f320bf1f297b449ed295" />
+    <None Include=".git\objects\85\2dfb919991dd1ba96b6b842818c4657b23a2fd" />
+    <None Include=".git\objects\89\255e7a6742ccf0f94ac48c6b88d5f14cd75718" />
+    <None Include=".git\objects\8a\01d29f53b1dd4debf64d7c0188831d253eb87b" />
+    <None Include=".git\objects\8e\00630d27c92ceaea66a9a974ab16b4c2333d1a" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\97\86007093fb3a7f1f5d17e7ca1a8513077e33cf" />
+    <None Include=".git\objects\9a\2f34e9ddb40335eec2cc3982bad2b391ce1d0d" />
+    <None Include=".git\objects\9e\a10a275321f9993e4ca9f43458464a9b8f6f6d" />
+    <None Include=".git\objects\9f\ea25f34365f7fec9076779f9e2eaa2c28878e1" />
+    <None Include=".git\objects\a0\37553768fd29c28d4dd984c291c356fd7cf4da" />
+    <None Include=".git\objects\a4\aca8dda551b1eb6ced0f46246f207f352f45c2" />
+    <None Include=".git\objects\aa\6cc3fa3ea3c1ff00d9b86f91ee1b1f2b3ae92a" />
+    <None Include=".git\objects\ac\71cf9fc41e214bf40e316b2db6e4d793f909c1" />
+    <None Include=".git\objects\ae\fda86f82b6399e8d1d8342ae3e9cb4b960c095" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\af\e5204360c53cfbb8a0c23a563d45d01ceaed13" />
+    <None Include=".git\objects\b1\10af6f380d5071053ccbd8f20a5b18b4fda80e" />
+    <None Include=".git\objects\b1\de242e32461b99c18c6d14dabc08d3ce91099d" />
+    <None Include=".git\objects\b3\90758de4de0f1a7b91e57db3b2b5094f517727" />
+    <None Include=".git\objects\b6\5f25561578edb2162b6f72ff8ae15380ce29a5" />
+    <None Include=".git\objects\b6\822d7d3befdc1bcbe0dbcf90d66baa394867af" />
+    <None Include=".git\objects\b9\61da8e6bdca79e0fb3974db64ceddc1d264ae9" />
+    <None Include=".git\objects\c0\b884dafd29f3a2f4c78dc1e90306c2e49079f9" />
+    <None Include=".git\objects\c8\c1e1b5891406145a8534e20398e1280d465b5e" />
+    <None Include=".git\objects\cd\e07260962631585d4109df5d735181e78b588e" />
+    <None Include=".git\objects\d2\dac3c58674ad33a50e7d027c64a4eb37e8ec7f" />
+    <None Include=".git\objects\d4\5c6fbe58cd01b6c6ed184e37c31d1c1af1c870" />
+    <None Include=".git\objects\d4\a0d17b5fd68beeeebe5e299acd0c5bfa52e15f" />
+    <None Include=".git\objects\d9\63d860c7c605e1c0fbf1486be5256d518b59a2" />
+    <None Include=".git\objects\da\1f7728583f2cfb4bcdda0a9168775c102614c7" />
+    <None Include=".git\objects\da\ccb497a0731af7bde3934e3dfdd96cf8e66825" />
+    <None Include=".git\objects\dc\7f9a0f746a9c0358064ab4d41e4957930dd2de" />
+    <None Include=".git\objects\dc\b94985dec96e7b168eb65f2d3ce5a995cd07dd" />
+    <None Include=".git\objects\e1\aaab3657e6a7c7fc9583094ec5014eb2e2f0c1" />
+    <None Include=".git\objects\e7\ed77edaba8acdf218772dd8fe65b0bfb22da62" />
+    <None Include=".git\objects\e8\9f85d6e772d2379110f523d54581f7c5939b6c" />
+    <None Include=".git\objects\ee\7a511831faf73a4f4fc6c24cdd3d2dad4c5299" />
+    <None Include=".git\objects\f7\8cee3ce9ec338d5e4e7316c11094296b9ebcbc" />
+    <None Include=".git\objects\f8\da4b47ab807367d323d8ce413728bd14e9ad5f" />
+    <None Include=".git\objects\fb\28145d8e292c76c632c82fe1fb6c32029e2b2f" />
+    <None Include=".git\objects\ff\4b67f52aa9ce15072f21b59080dc3549a0ee8f" />
+    <None Include=".git\objects\ff\b01b690d7b56282cb38aba997e431dfdb92f07" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\BookOrganizer\v15\.suo" />
+    <None Include=".vs\BookOrganizer\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\BookOrganizer\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\BookOrganizer\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\BookOrganizer\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include="BookOrganizer\App.config" />
+    <None Include="BookOrganizer\bin\Debug\BookOrganizer.exe.config" />
+    <None Include="BookOrganizer\obj\Debug\App.baml" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer.csproj.CopyComplete" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer.csproj.CoreCompileInputs.cache" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer.csproj.GenerateResource.cache" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer.csprojAssemblyReference.cache" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer_MarkupCompile.cache" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer_MarkupCompile.i.cache" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer_MarkupCompile.i.lref" />
+    <None Include="BookOrganizer\obj\Debug\BookOrganizer_MarkupCompile.lref" />
+    <None Include="BookOrganizer\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="BookOrganizer\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="BookOrganizer\obj\Debug\Views\AddCourseView.baml" />
+    <None Include="BookOrganizer\obj\Debug\Views\MainView.baml" />
+    <None Include="BookOrganizer\obj\Debug\Views\SettingsWindow.baml" />
+    <None Include="BookOrganizer\packages.config" />
+    <None Include="BookOrganizer\Properties\Settings.settings" />
+    <None Include="packages\MaterialDesignColors.2.0.1\.signature.p7s" />
+    <None Include="packages\MaterialDesignColors.2.0.1\MaterialDesignColors.2.0.1.nupkg" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\.signature.p7s" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-Black.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-BlackItalic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-Bold.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-BoldItalic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-Italic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-Light.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-LightItalic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-Medium.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-MediumItalic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-Regular.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-Thin.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\Roboto-ThinItalic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\RobotoCondensed-Bold.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\RobotoCondensed-BoldItalic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\RobotoCondensed-Italic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\RobotoCondensed-Light.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\RobotoCondensed-LightItalic.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\build\Resources\Roboto\RobotoCondensed-Regular.ttf" />
+    <None Include="packages\MaterialDesignThemes.4.1.0\MaterialDesignThemes.4.1.0.nupkg" />
+    <None Include="packages\Prism.Core.8.1.97\.signature.p7s" />
+    <None Include="packages\Prism.Core.8.1.97\LICENSE" />
+    <None Include="packages\Prism.Core.8.1.97\Prism.Core.8.1.97.nupkg" />
+    <None Include="packages\System.ValueTuple.4.5.0\.signature.p7s" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\netcoreapp2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\netstandard2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\uap10.0.16299\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\netcoreapp2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\netstandard2.0\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\uap10.0.16299\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.ValueTuple.4.5.0\System.ValueTuple.4.5.0.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="BookOrganizer\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BookOrganizer\Views\AddCourseView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BookOrganizer\Views\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BookOrganizer\Views\SettingsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookOrganizer\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BookOrganizer\obj\Debug\App.g.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\App.g.i.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\BookOrganizer_Content.g.i.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\GeneratedInternalTypeHelper.g.i.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\Views\AddCourseView.g.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\Views\AddCourseView.g.i.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\Views\HomeView.g.i.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\Views\MainView.g.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\Views\MainView.g.i.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\Views\SettingsWindow.g.cs" />
+    <Compile Include="BookOrganizer\obj\Debug\Views\SettingsWindow.g.i.cs" />
+    <Compile Include="BookOrganizer\Properties\AssemblyInfo.cs" />
+    <Compile Include="BookOrganizer\Properties\Resources.Designer.cs" />
+    <Compile Include="BookOrganizer\Properties\Settings.Designer.cs" />
+    <Compile Include="BookOrganizer\ViewModels\AddCourseViewModel.cs" />
+    <Compile Include="BookOrganizer\ViewModels\MainViewModel.cs" />
+    <Compile Include="BookOrganizer\ViewModels\SettingsViewModel.cs" />
+    <Compile Include="BookOrganizer\Views\AddCourseView.xaml.cs">
+      <DependentUpon>AddCourseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BookOrganizer\Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BookOrganizer\Views\SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BookOrganizer\obj\Debug\BookOrganizer.g.resources" />
+    <EmbeddedResource Include="BookOrganizer\obj\Debug\BookOrganizer.Properties.Resources.resources" />
+    <EmbeddedResource Include="BookOrganizer\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\Test\v15\" />
+    <Folder Include="BookOrganizer\bin\Release\" />
+    <Folder Include="BookOrganizer\Commands\" />
+    <Folder Include="BookOrganizer\Img\" />
+    <Folder Include="BookOrganizer\Infrastructure\" />
+    <Folder Include="BookOrganizer\Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

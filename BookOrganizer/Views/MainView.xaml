@@ -66,6 +66,7 @@
         <Button Background="{x:Null}"  Width="33" Height="33" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Padding="0" Command="{Binding AddCourse}">
             <materialDesign:PackIcon Kind="Add" Foreground="Black"/>
         </Button>
-
+        
+        <ContentControl Content="{Binding SelectedViewModel}"/>
     </Grid>
 </Window>

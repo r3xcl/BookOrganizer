@@ -17,7 +17,7 @@ namespace BookOrganizer.Views
     /// <summary>
     /// Логика взаимодействия для AddCourseView.xaml
     /// </summary>
-    public partial class AddCourseView : Window
+    public partial class AddCourseView : UserControl
     {
         public AddCourseView()
         {
