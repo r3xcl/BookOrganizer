@@ -21,7 +21,7 @@ namespace BookOrganizer.Views
     {
 
         private DispatcherTimer timer = new DispatcherTimer();
-        private int x;
+
  
         public SettingsWindow()
         {

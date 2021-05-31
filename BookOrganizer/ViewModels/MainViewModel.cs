@@ -5,26 +5,26 @@ using Prism.Commands;
 using System.Windows.Data;
 
 using System;
+using BookOrganizer.Stores;
 
 namespace BookOrganizer.ViewModels
 {
- class MainViewModel : BindableBase
+    public class MainViewModel : ViewModelBase
     {
-      
+        private readonly NavigationStore _navigationStore;
 
-        public ICommand ShowSettings
+        public ViewModelBase CurrentViewModel => _navigationStore.CurrentViewModel;
+
+        public MainViewModel(NavigationStore navigationStore)
         {
-            get;
-            private set;
+            _navigationStore = navigationStore;
+
+            _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
         }
-        public MainViewModel()
+
+        private void OnCurrentViewModelChanged()
         {
-            ShowSettings = new DelegateCommand(ShowMethod);
-        }
-        private void ShowMethod()
-        {
-            SettingsWindow settingsWindow = new SettingsWindow();
-            settingsWindow.Show();
+            OnPropertyChanged(nameof(CurrentViewModel));
         }
     }
 

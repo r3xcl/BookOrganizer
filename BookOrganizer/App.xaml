@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:BookOrganizer"
              xmlns:views="clr-namespace:BookOrganizer.Views"
-             xmlns:viewmodels="clr-namespace:BookOrganizer.ViewModels"
-             StartupUri="Views/MainView.xaml">
+             xmlns:viewmodels="clr-namespace:BookOrganizer.ViewModels">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

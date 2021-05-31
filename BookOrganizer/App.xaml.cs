@@ -1,4 +1,5 @@
-﻿using BookOrganizer.ViewModels;
+﻿using BookOrganizer.Stores;
+using BookOrganizer.ViewModels;
 using BookOrganizer.Views;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,19 @@ namespace BookOrganizer
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            NavigationStore navigationStore = new NavigationStore();
 
+            navigationStore.CurrentViewModel = new HomeViewModel(navigationStore);
+
+            MainWindow = new MainView()
+            {
+                DataContext = new MainViewModel(navigationStore)
+            };
+            MainWindow.Show();
+
+            base.OnStartup(e);
+        }
     }
 }

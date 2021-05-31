@@ -1,5 +1,4 @@
-﻿using BookOrganizer.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,20 +15,13 @@ using System.Windows.Shapes;
 namespace BookOrganizer.Views
 {
     /// <summary>
-    /// Логика взаимодействия для MainView.xaml
+    /// Логика взаимодействия для HomeView.xaml
     /// </summary>
-    public partial class MainView : Window
+    public partial class HomeView : UserControl
     {
-    
-        
-            public MainView()
-            {
-                InitializeComponent();
-                
-            }
-
-        
-
-
+        public HomeView()
+        {
+            InitializeComponent();
+        }
     }
 }
