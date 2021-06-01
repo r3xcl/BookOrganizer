@@ -44,12 +44,12 @@ namespace BookOrganizer.Views
             {
                 From = 1.0,
                 To = 0.0,
-                Duration = new Duration(TimeSpan.FromSeconds(0.4))
+                Duration = new Duration(TimeSpan.FromSeconds(0.3))
             };
             this.BeginAnimation(Window.OpacityProperty, animation);
 
             timer.Tick += new EventHandler(CloseWindow);
-            timer.Interval = new TimeSpan(0,0,0,0,400);
+            timer.Interval = new TimeSpan(0,0,0,0,300);
             timer.Start();
         }
 
