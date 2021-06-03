@@ -53,6 +53,7 @@
         <Button x:Name="ButtonOpen" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Width="30" Height="30" Padding="0">
             <materialDesign:PackIcon Kind="Menu" Foreground="Black"/>
         </Button>
+        
         <Grid x:Name="GridMenu" Width="65" HorizontalAlignment="Left" Margin="-65 0 0 0" Background="White" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TransformGroup>
@@ -74,7 +75,7 @@
             </Button>
         </Grid>
 
-        <Button Background="{x:Null}"  Width="33" Height="33" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Padding="0" Command="{Binding NavigateAddCourseCommand}">
+        <Button Background="{x:Null}" ToolTip="Добавить курс" Width="33" Height="33" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Padding="0" Command="{Binding NavigateAddCourseCommand}">
             <materialDesign:PackIcon Kind="Add" Foreground="Black"/>
         </Button>
 

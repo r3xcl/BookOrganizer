@@ -8,8 +8,8 @@
         mc:Ignorable="d"
          Background="White">
     <Grid>
-        <Button HorizontalAlignment="Right" Command="{Binding NavigateHomeCommand}" VerticalAlignment="Top" BorderBrush="Red" Background="Transparent" Height="25" Width="25" Padding="0" Margin="10">
-            <materialDesign:PackIcon Kind="Close" Padding="0" Foreground="Black" Margin="0"/>
+        <Button HorizontalAlignment="Left" Command="{Binding NavigateHomeCommand}" VerticalAlignment="Top" BorderBrush="Yellow" Background="Transparent" Height="25" Width="25" Padding="0" Margin="10">
+            <materialDesign:PackIcon Kind="ArrowLeft" Padding="0" Foreground="Black" Margin="0"/>
         </Button>
     </Grid>
 </UserControl>

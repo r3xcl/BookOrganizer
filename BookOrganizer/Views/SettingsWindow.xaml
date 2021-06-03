@@ -7,6 +7,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local1="clr-namespace:BookOrganizer.ViewModels"
         mc:Ignorable="d"
+        TextOptions.TextFormattingMode="Ideal"
         Title="SettingsWindow" Name="ContentLayout"  ResizeMode="NoResize" WindowStyle="None"  AllowsTransparency="True" Background="Transparent" Topmost="True" WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
@@ -29,7 +30,7 @@
 
     <Grid DataContext="{Binding ElementName=root}">
         <Border Background="Transparent" Visibility="{Binding Visibility}">
-            <Border BorderBrush="LightBlue" BorderThickness="2" Background="AliceBlue" MouseLeftButtonDown="Border_MouseLeftButtonDown" Padding="1"
+            <Border BorderBrush="LightBlue" BorderThickness="4" Background="AliceBlue" MouseLeftButtonDown="Border_MouseLeftButtonDown" Padding="1"
                 CornerRadius="10" VerticalAlignment="Center"
                 HorizontalAlignment="Center">
                 <Border.BitmapEffect>
@@ -42,33 +43,40 @@
                         <RowDefinition />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <Button HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="Red" Background="Transparent" Height="25" Width="25" Padding="0" Margin="0" Click="Button_Click">
-                        <materialDesign:PackIcon Kind="Close" Padding="0" Foreground="Black" Margin="0"/>
+
+                    <Button HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="Red" Background="Transparent" Height="25" Width="25" Padding="0" Margin="2" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="Close" Padding="0" Foreground="Black" Margin="2"/>
                     </Button>
 
-                    <TextBlock HorizontalAlignment="Center" FontSize="18" Height="25" VerticalAlignment="Top" Foreground="LightBlue">Настройки</TextBlock>
+                    <Button HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="Green" Background="Transparent" Height="25" Width="25" Padding="0" Margin="2,2,38,2" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="Check" Padding="0" Foreground="Black" Margin="2"/>
+                    </Button>
+
+                    <TextBlock HorizontalAlignment="Center" FontSize="18" Height="25" VerticalAlignment="Top" >Настройки
+                    </TextBlock>
 
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="10*"/>
-                            <RowDefinition Height="60*"/>
+                            <RowDefinition Height="35*"/>
+                            <RowDefinition Height="35*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
-                        <Border  Grid.Row="1" BorderBrush="Blue" BorderThickness="1" CornerRadius="6" Margin="5">
+                        <Border  Grid.Row="1" BorderBrush="LightBlue" BorderThickness="3" CornerRadius="6" Margin="5,4,5.2,1">
                             <StackPanel >
-                                <TextBlock HorizontalAlignment="Center" FontSize="15" Foreground="LightBlue">Тема</TextBlock>
-                                <RadioButton Margin="10" Content="Светлая" />
+                                <TextBlock HorizontalAlignment="Center" FontSize="15" Margin="0,5,0,0">Тема</TextBlock>
+                                <RadioButton Margin="10,10,10,10" Content="Светлая" />
                                 <RadioButton Margin="10,0,10,10" Content="Темная"/>
                             </StackPanel>
                         </Border>
 
-                        <Border  Grid.Row="1" Grid.Column="2" BorderBrush="Blue" BorderThickness="1" CornerRadius="6" Margin="5">
+                        <Border  Grid.Row="1" Grid.Column="1" BorderBrush="LightBlue" BorderThickness="3" CornerRadius="6" Margin="4.8,4,5.4,1">
                             <StackPanel >
-                                <TextBlock HorizontalAlignment="Center" FontSize="15" Foreground="LightBlue">Язык</TextBlock>
+                                <TextBlock HorizontalAlignment="Center" FontSize="15" Margin="0,5,0,0">Язык</TextBlock>
                                 <RadioButton Margin="10" Content="Русский" />
                                 <RadioButton Margin="10,0,10,10" Content="Английский"/>
                             </StackPanel>
